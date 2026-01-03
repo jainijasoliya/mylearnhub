@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enrolment Page</title>
+
+    <style>
+        .outer{
+            margin: 40px;
+            background-color: rgb(232, 232, 235);
+        }
+        .navigation{
+            background-color:rgb(10, 121, 225) ;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 70px;
+          
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            padding: 9px 20px;
+        }
+        nav{
+          display: flex;
+          gap: 30px;
+          margin-right: 100px;
+        }
+        nav a:hover{
+            background-color: rgba(255,255,255,0.3);
+            border: transparent;
+            border-radius: 5px;
+        }
+        .inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            background-color: white;
+            width: 400px;
+            padding: 20px;
+            box-shadow: 0 2px  5px rgb(110, 109, 109);
+        }
+        p{
+            margin-top: -3px;
+            margin-bottom: 20px;
+        }
+        .box{
+            background-color: rgb(10, 121, 225);
+            color: rgb(49, 47, 47);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        fieldset legend {
+            color: rgb(49, 47, 47);
+            font-weight: bold;
+            font-size: 18px;
+        }
+        label{
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: rgb(49, 47, 47);
+            font-weight: bold;
+        }
+        select {
+            padding: 10px;
+            width: 350px;    
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"]{
+            padding: 10px;
+            width: 330px;
+        }
+        textarea{
+            padding: 10px;
+        }
+        input:focus,
+        select:focus,
+        textarea:focus{
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 4px rgba(52,152,219,0.1);
+        }
+        button{
+            width: 350px;
+            padding: 10px;
+            background-color: rgb(10, 121, 225);
+            color: white;
+            border: none;
+            margin-left: 25px;
+            border-radius: 3px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        button:hover{
+            transform: translateX(-3px);
+        }
+        .foot p{
+            margin: 0;
+            text-align: center;
+        }
+        .foot{
+            background-color: #2c3e50;
+            color: white;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           font-size: 14px;
+           line-height: 2;
+        }
+        .foot span{
+            color: #4da6ff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="navigation">
+            <h2>📖 LearnHub</h2>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Courses.html">Courses</a>
+                <a href="Enrollment.html">Enroll</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </div>  <br>
+
+        <div class="inner">
+            <div class="form">
+                <div class="box">
+                    <h1>Course Enrollment</h1>
+                    <p>Welcome To Enrollment Page</p>
+                </div>  <br><br>
+
+                <div class="box1">
+                    <form>
+                        <fieldset>
+                            <legend>👤 Personal Information</legend>
+
+                            <label>Full Name</label>
+                                <input type="text" placeholder="Enter your full name">
+
+                            <label>Email Address</label>
+                                <input type="email" placeholder="Enter your email">
+
+                            <label>Phone Number</label>
+                                <input type="text" placeholder="+91 1234567890">
+
+                            <label>Date Of Birth</label>
+                                <input type="date"> 
+
+                        </fieldset>
+                    </form>
+                </div>  <br><br>
+
+                <div class="box1">
+                    <form>
+                        <fieldset>
+                            <legend>🎓 Education Background</legend>
+
+                            <label>Highest Education</label>
+                                <select>
+                                    <option>Select Your Qualification</option>
+                                    <option>SSC</option>
+                                    <option>HSC</option>
+                                    <option>Undergraduate</option>
+                                    <option>Postgraduate</option>
+                                </select>
+
+                            <label>Do you have any programming experience?</label>
+                                <input type="radio" name="ans">Yes
+                                <input type="radio" name="ans">No
+                        </fieldset>
+                    </form>
+                </div>  <br><br>
+
+                <div class="box1">
+                    <form>
+                        <fieldset>
+                            <legend>📘 Course Selection</legend>
+
+                            <label>Select Course</label>
+                                <select>
+                                    <option>B.CA</option>
+                                    <option>B.COM</option>
+                                    <option>BBA</option>
+                                    <option>MCA</option>
+                                </select>
+
+                            <label>Why do you want to take this course?</label>
+                                <textarea rows="6" cols="43" placeholder="Tell us about your goals..."></textarea>
+                        </fieldset>
+                    </form>
+                </div>  <br>
+
+                <input type="checkbox"> I agree to the Terms and Conditions and Privacy Policy <br><br>
+
+                <button type="submit">Complete Enrollment</button>
+            </div>
+        </div>  <br><br>
+
+         <footer class="foot">
+           <p>&copy 2024 LearnHub All rights reserved   <br>
+            Email : <span>info@example.com</span> | Phone  +91 1234567890
+           </p>
+        </footer>
+    </div>
+</body>
+</html>
